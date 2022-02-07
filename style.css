@@ -60,3 +60,31 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.choices {
+  width: 176px;
+  padding: 0;
+  margin: 0;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.choices__inner {
+  width: 176px;
+  padding: 0;
+  margin: 0;
+  height: 39px;
+}
+
+
+.choices__item {
+  margin: 0;
+  padding: 0;
+  width: 176px;
+  height: 39px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #333333;
+}

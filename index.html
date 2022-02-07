@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -20,7 +22,17 @@
             <label for="checkbox5" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox5" class="checkboxes__original"><span class="checkboxes__custom">Волки</span></label>
             <label for="checkbox6" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox6" class="checkboxes__original"><span class="checkboxes__custom">Олени и лоси</span></label>
         </div>
+        <select class="js-choice">
+          <option value="">Материал</option>
+          <option>Древесина</option>
+          <option>Металл</option>
+          <option>Камень</option>
+          <option>Пластик</option>
+          <option>Композитный</option>
+          <option>Гипс</option>
+        </select>
     </div>
+    <script src="custom.js"></script>
 </body>
 
 </html>
