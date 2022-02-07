@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital@0;1&display=swap');
+
 html,
 body {
     margin: 0;
@@ -25,6 +26,7 @@ body {
     color: #333333;
     background: #FFFFFF;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 .checkboxes__h2 {
@@ -62,29 +64,102 @@ body {
 }
 
 .choices {
-  width: 176px;
-  padding: 0;
-  margin: 0;
-  background: #FFFFFF;
-  border-radius: 10px;
+    width: 176px;
+    height: 39px;
+    padding: 0;
+    margin: 0;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-size: 14px !important;
+    line-height: 19px;
+    border: 0;
 }
+
+.choices__placeholder {
+    opacity: 1;
+    color: #333333;
+}
+
 
 .choices__inner {
-  width: 176px;
-  padding: 0;
-  margin: 0;
-  height: 39px;
+    background-color: #FFFFFF;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    min-height: 39px;
 }
 
+.choices__list {
+    padding: 0;
+}
 
 .choices__item {
-  margin: 0;
-  padding: 0;
-  width: 176px;
-  height: 39px;
+    margin: 0;
+    padding: 10px 0 10px 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+    border: 0;
+}
 
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-  color: #333333;
+.is-open .choices__inner,
+.is-focused .choices__inner {
+    border: 0;
+    border-radius: 10px;
+}
+
+.is-open .choices__placeholder {
+    border-bottom: 1px solid #CCB26E;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.is-open .choices__list--dropdown {
+    top: 0;
+    border: 1px solid #CCB26E;
+    border-radius: 10px;
+}
+
+.choices__list--dropdown .choices__item {
+    padding: 10px 0 10px 15px;
+}
+
+.choices__item:last-of-type{
+    padding-bottom: 20px;
+}
+.choices__item:nth-of-type(2){
+    padding-top: 20px;
+}
+.choices__list--dropdown .choices__item--selectable::after {
+    content: "";
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: transparent;
+}
+
+.choices[data-type*=select-one]::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-bottom: 1px solid #666666;
+    border-right: 1px solid #666666;
+    transform: rotate(45deg);
+    top: 15px;
+    right: 15px;
+}
+
+.is-open[data-type*=select-one] .choices__list--dropdown::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-bottom: 1px solid #CCB26E;
+    border-right: 1px solid #CCB26E;
+    transform: rotate(-135deg);
+    top: 17px;
+    right: 15px;
 }
