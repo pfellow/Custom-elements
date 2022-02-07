@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital@0;1&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #E5E5E5;
+    padding: 50px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    width: 176px;
+    padding: 21px 30px 30px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.checkboxes__h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 21px 0 0 0;
+}
+
+.checkboxes__original {
+    display: none;
+}
+
+.checkboxes__label {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 24px;
+}
+
+.checkboxes__custom::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #CCB26E;
+    border-radius: 3px;
+}
+
+.checkboxes__original:checked+.checkboxes__custom::before {
+    background-image: url('check.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
