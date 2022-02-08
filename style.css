@@ -9,7 +9,6 @@ body {
 
 .main {
     width: 80vw;
-    height: 100vh;
     margin: 0 auto;
     background-color: #E5E5E5;
     padding: 50px;
@@ -161,4 +160,26 @@ body {
     transform: rotate(-135deg);
     top: 17px;
     right: 15px;
+}
+
+.map-container {
+  position: relative;
+  width: 460px;
+  height: 460px;
+  overflow: hidden;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+}
+
+.ymaps-2-1-79-ground-pane {
+	filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
 }
