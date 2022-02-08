@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -17,24 +18,44 @@
     <div class="main">
         <div class="checkboxes">
             <h2 class="checkboxes__h2">Категории:</h2>
-            <label for="checkbox1" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox1" class="checkboxes__original"><span class="checkboxes__custom">Динозавры</span></label>
-            <label for="checkbox2" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox2" class="checkboxes__original"><span class="checkboxes__custom">Косули</span></label>
-            <label for="checkbox3" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox3" class="checkboxes__original"><span class="checkboxes__custom">Медведи</span></label>
-            <label for="checkbox4" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox4" class="checkboxes__original"><span class="checkboxes__custom">Лисы</span></label>
-            <label for="checkbox5" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox5" class="checkboxes__original"><span class="checkboxes__custom">Волки</span></label>
-            <label for="checkbox6" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox6" class="checkboxes__original"><span class="checkboxes__custom">Олени и лоси</span></label>
+            <label for="checkbox1" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox1"
+                    class="checkboxes__original"><span class="checkboxes__custom">Динозавры</span></label>
+            <label for="checkbox2" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox2"
+                    class="checkboxes__original"><span class="checkboxes__custom">Косули</span></label>
+            <label for="checkbox3" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox3"
+                    class="checkboxes__original"><span class="checkboxes__custom">Медведи</span></label>
+            <label for="checkbox4" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox4"
+                    class="checkboxes__original"><span class="checkboxes__custom">Лисы</span></label>
+            <label for="checkbox5" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox5"
+                    class="checkboxes__original"><span class="checkboxes__custom">Волки</span></label>
+            <label for="checkbox6" class="checkboxes__label"><input type="checkbox" name="name" id="checkbox6"
+                    class="checkboxes__original"><span class="checkboxes__custom">Олени и лоси</span></label>
         </div>
         <select class="js-choice">
-          <option value="">Материал</option>
-          <option>Древесина</option>
-          <option>Металл</option>
-          <option>Камень</option>
-          <option>Пластик</option>
-          <option>Композитный</option>
-          <option>Гипс</option>
+            <option value="">Материал</option>
+            <option>Древесина</option>
+            <option>Металл</option>
+            <option>Камень</option>
+            <option>Пластик</option>
+            <option>Композитный</option>
+            <option>Гипс</option>
         </select>
         <div class="map-container">
-          <div class="map" id="map" style="width: 460px; height: 510px"></div>
+            <div class="map" id="map" style="width: 460px; height: 510px"></div>
+        </div>
+        <div class="textfield" id="textfield" data-simplebar>
+            <p class="inside-text">Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того,
+                что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического
+                прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные
+                вещи - безусловно открывает новые горизонты для первоочередных требований.</p>
+        </div>
+        <div class="form-container">
+            <form action="" class="form">
+                <input type="text" name="" id="" class="form__input" placeholder="Имя*" required>
+                <input type="tel" name="" id="" class="form__input" placeholder="Телефон*" required>
+                <input type="email" name="" id="" class="form__input" placeholder="E-mail*" required>
+                <input type="submit" value="Заказать" class="form__submit">
+            </form>
         </div>
     </div>
     <script src="custom.js"></script>
