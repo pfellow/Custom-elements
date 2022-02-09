@@ -53,9 +53,12 @@
                 вещи - безусловно открывает новые горизонты для первоочередных требований.</p>
         </div>
         <div class="form-container">
-            <form action="" class="form" id="form">
+            <form action="https://jsonplaceholder.typicode.com/posts" class="form" id="form">
+                <div class="errors-container errors-container1"></div>
                 <input type="text" name="name" id="name" class="form__input" placeholder="Имя*" required>
-                <input type="tel" name="" class="form__input" placeholder="Телефон*" id="tel" required>
+                <div class="errors-container errors-container2"></div>
+                <input type="tel" name="tel" class="form__input" placeholder="Телефон*" id="tel" required>
+                <div class="errors-container errors-container3"></div>
                 <input type="email" name="email" id="email" class="form__input" placeholder="E-mail*" required>
                 <input type="submit" value="Заказать" class="form__submit">
             </form>

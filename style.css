@@ -223,11 +223,10 @@ body {
 }
 
 .form {
-    padding: 38px 30px 39px 30px;
+    padding: 21px 30px 39px 30px;
 }
 
 .form__input {
-    margin-bottom: 31px;
     height: 60px;
     width: 360px;
     background: #FFFFFF;
@@ -240,6 +239,7 @@ body {
 }
 
 .form__submit {
+    margin-top: 31px;
     padding: 17px 53px;
     width: 192px;
     height: 60px;
@@ -255,4 +255,11 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #999999;
+}
+
+.errors-container {
+    margin-bottom: 5px;
+    margin-top: 14px;
+    margin-left: 20px;
+    height: 12px;
 }
