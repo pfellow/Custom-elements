@@ -263,3 +263,72 @@ body {
     margin-left: 20px;
     height: 12px;
 }
+
+.text-tooltip {
+    margin-top: 50px;
+    width: 375px;
+    background-color: white;
+}
+
+.text-for-tooltip {
+    margin: 0;
+    padding: 20px 78px 20px 29px;
+    font-size: 14px;
+    line-height: 170%;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+
+.tooltip {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-image: url('tooltip.svg');
+    margin-bottom: -2px;
+    position: relative;
+}
+
+.tooltip:hover {
+    background-image: url('tooltip-hover.svg');
+}
+
+.tooltip-arrow {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    height: 0;
+    width: 0;
+    /* background: #666666; */
+    transform: translate(-50%, 0);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #666666;
+    z-index: -1;
+}
+
+.tooltip-text {
+    position: absolute;
+    bottom: 27px;
+    left: 50%;
+    max-width: 163px;
+    background-color: #666666;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.inside-text {
+    margin: 0;
+    padding: 7px 15px 8px 15px;
+}
+
+.tooltip:hover .tooltip-text  {
+    opacity: 1;
+    
+}
