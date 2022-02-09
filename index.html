@@ -10,6 +10,9 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="jquery.inputmask.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -50,10 +53,10 @@
                 вещи - безусловно открывает новые горизонты для первоочередных требований.</p>
         </div>
         <div class="form-container">
-            <form action="" class="form">
-                <input type="text" name="" id="" class="form__input" placeholder="Имя*" required>
-                <input type="tel" name="" id="" class="form__input" placeholder="Телефон*" required>
-                <input type="email" name="" id="" class="form__input" placeholder="E-mail*" required>
+            <form action="" class="form" id="form">
+                <input type="text" name="name" id="name" class="form__input" placeholder="Имя*" required>
+                <input type="tel" name="" class="form__input" placeholder="Телефон*" id="tel" required>
+                <input type="email" name="email" id="email" class="form__input" placeholder="E-mail*" required>
                 <input type="submit" value="Заказать" class="form__submit">
             </form>
         </div>

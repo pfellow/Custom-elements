@@ -39,4 +39,51 @@ document.addEventListener('DOMContentLoaded', function() {
         myMap.geoObjects.add(myPlacemark);
     }
 
+    var selector = document.getElementById("tel");
+    var im = new Inputmask("+7 (999) 999-99-99");
+    im.mask(selector);
+
+    const validation = new window.JustValidate('#form');
+
+    validation
+  .addField('#name', [
+    {
+      rule: 'minLength',
+      value: 3,
+      errorMessage: 'Имя введено неверно',
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+      errorMessage: 'Имя введено неверно',
+    },
+    {
+      rule: 'required',
+      errorMessage: 'Как вас зовут?',
+    },
+  ])
+  .addField('#email', [
+    {
+      rule: 'required',
+      errorMessage: 'Укажите ваш e-mail',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Email введен неверно!',
+    },
+
+  ])
+  .addField('#tel', [
+    {
+      rule: 'required',
+      errorMessage: 'Укажите ваш телефон',
+    },
+    {
+      rule: 'customRegexp',
+      value: /+7[ ](\d\d\d)[ ]\d\d\d-\d\d-\d\d/,
+      errorMessage: 'Телефон введен неверно!',
+    },
+  ]);
+
+
 });
